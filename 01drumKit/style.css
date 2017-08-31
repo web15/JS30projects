@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imqur.com/b9r5sEL.jpg) bottom center;
+  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
   background-size: cover;
 }
 
@@ -46,6 +46,6 @@ kbd {
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 01rem;
+  letter-spacing: .1rem;
   color: #ffc600;
 }
