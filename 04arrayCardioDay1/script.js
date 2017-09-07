@@ -29,7 +29,7 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 //  }
 //});
 
-const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600))
+const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
 console.table(fifteen);
 
 // Array.prototype.map()
@@ -57,7 +57,7 @@ console.log(fullNames);
 //console.table(ordered)
 
 const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
-console.table(ordered)
+console.table(ordered);
 
 // Array.prototype.reduce()
 // 4. How many years did the inventors live?
@@ -93,7 +93,7 @@ const oldest = inventors.sort(function(a, b) {
   const nextGuy = b.passed - b.year;
   return lastGuy > nextGuy ? -1 : 1;
 });
-console.table(oldest)
+console.table(oldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
