@@ -112,7 +112,7 @@ console.table(oldest)
 const alpha = people.sort(function(lastOne, nextOne) {
   const [aLast, aFirst] = lastOne.split(', ');
   const [bLast, bFirst] = nextOne.split(', ');
-  return aLast > bLast ? -1 : 1;
+  return aLast > bLast ? 1 : -1;
 });
 console.log(alpha);
 
@@ -120,7 +120,15 @@ console.log(alpha);
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+const transportation = data.reduce(function(obj, item) {
+  if(!obj[item]) {
+    obj[item] = 0;
+  }
+  obj[item]++;
+  return obj;
+}, {});
 
+console.log(transportation);
 
 
 
