@@ -2,7 +2,7 @@
   background-color: green;
 }*/
 
-html {
+**html {
   box-sizing: border-box;
 }
 
@@ -68,7 +68,7 @@ body {
   height: 30px;
 }
 
->player__controls {
+.player__controls {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -84,22 +84,22 @@ body {
 }
 
 .player:hover .progress {
-  height: 15px
+  height: 15px;
 }
 
 .players__controls > * {
   flex: 1; 
 }
 
-.progess {
+.progress {
   flex: 10;
   position: relative;
   display: flex;
   flex-basis: 100%;
   height: 5px;
-  transition:height 0.3s;
+  transition: height 0.3s;
   background: rgba(0, 0, 0, 0.5);
-  cursor:ew-resize;
+  cursor: ew-resize;
 }
 
 .progress__filled {
@@ -126,7 +126,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 13, 0);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
   background: rgba(255, 255, 255, 0.8);
   border-radius: 1.3px;
   border: 0.2px solid rgba(1, 1, 1, 0);
