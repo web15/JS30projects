@@ -27,7 +27,7 @@ svg {
   margin-bottom: 50px;
 }
 
-wrapper {
+.wrapper {
   padding: 20px;
   max-width: 350px;
   background: rgba(255, 255, 255, 0.95);
