@@ -26,7 +26,7 @@ function getVideo() {
     const width = video.videoWidth;
     const height = video.videoHeight;
     canvas.width = width;
-    canvas.height = hright;
+    canvas.height = height;
 
     return setInterval(() =>  {
       ctx.drawImage(video, 0, 0, width, height);
@@ -53,7 +53,7 @@ function getVideo() {
     const data = canvas.toDataURL('image/jpeg');
     const link = document.createElement('a');
     link.href = data;
-    link.setAttribute('donwload', 'handsome');
+    link.setAttribute('download', 'handsome');
     link.innerHTML = `<img src="${data}" alt="Handsome Man"/>`;
     strip.insertBefore(link, strip.firstChild);
   }
