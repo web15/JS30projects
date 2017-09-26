@@ -68,7 +68,7 @@ function getVideo() {
   }
 
   function rgbSplit(pixels) {
-    for(let i = 0; i < pivels.data.length; i+=4)  {
+    for(let i = 0; i < pixels.data.length; i+=4)  {
       pixels.data[i - 150] = pixel.data[i + 0]; //RED
       pixels.data[i + 500] = pixel.data[i + 1]; // GREEN
       pixels.data[i - 550] = pixel.data[i + 2]; // Blue
